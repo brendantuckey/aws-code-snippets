@@ -12,7 +12,7 @@ OR
     Run button from code editor
 
 Author: Brendan Tuckey
-Repo location:
+Repo location: https://github.com/brendantuckey/aws-code-snippets/blob/latest/boto3/boto3-ec2-launch-new.py
 Updated: 3/23/2024
 """
 
