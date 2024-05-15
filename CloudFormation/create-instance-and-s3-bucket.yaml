@@ -26,7 +26,7 @@ Parameters:
       - t2.small
       - t2.medium
 
-  ClientName:
+  S3Purpose:
     Type: String
     Description: Required. What is the purpose of this bucket?
     AllowedValues:
@@ -75,7 +75,7 @@ Resources:
         - Key: Client
           Value: !FindInMap
             - ClientMap   # <----- map name
-            - !Ref ClientName  # <------ Reference I'm basing it on
+            - !Ref S3Purpose  # <------ Reference I'm basing it on
             - TagMessage  # <----- 2nd level key
 
   AnEC2Instance:
